@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Examen API</title>
+
+        <link rel="stylesheet" href="css/styleAPI.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+
+        <div id="app">
+            <div id="encabezado">
+                <div id="tittle">
+                    <i><h1>The Cat API</h1></i>
+                </div>
+                <div id="info">
+                    <h3>5IV7 Moreno Noguerón Ximena</h3>
+                    <h5>Automatización de Pruebas</h5>
+                </div>
+            </div>
+
+            <div id="container">
+                <div id="cat-image">
+                    <center><img id="imgCat"></center>
+                </div>
+                <div id="controls">
+                    <h2 id="numCat">Identificador del Gatito: </h2>
+                    <br>
+                    <input type="button" value="Generar un nuevo Gatito" onclick="location.reload(true)">
+                    <br><br>
+                    <a href="../index.html">Regresar a Principal</a>
+                </div>
+            </div>
+        </div>
+        <script src="fetch.js"></script>
+
+        
+    </body>
+</html>

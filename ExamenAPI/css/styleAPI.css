@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('Nunito-VariableFont_wght.ttf'), url('Nunito-Italic-VariableFont_wght.ttf');
+}
+
+*{
+    font-family: Nunito;
+    font-size: 20px;
+    color: rgb(30, 28, 28);
+    margin: 5px;
+}
+
+body{
+    /* background-color: linear-gradient(left, rgb(246, 202, 210), rgb(145, 225, 145)); */
+    background-image: url('fondoHuellas2.jpg');
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+#app{
+    width: 80%;
+    height: 100%;
+}
+
+#encabezado, #container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 120%;
+    height: 90%;
+}
+
+#tittle{
+    width: 50%;
+}
+h1{
+    font-size: 70px;
+}
+#info{
+    padding-top: 25px;
+    width: 50%;
+}
+
+#cat-image{
+    width: 70%;
+    height: auto;
+}
+img{
+    border: solid rgb(108, 142, 186) 8px;
+    animation-name: bordeColor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    max-width: 95%;
+    max-height: 95%;
+}
+#controls{
+    width: 25%;
+    margin-left: 30px
+}
+input{
+    border-radius: 5px;
+    border: hidden;
+    background-color: rgb(110, 160, 221);
+    transition: transform .2s;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+input:hover{
+    cursor: pointer;
+    
+    transform: scale(1.2);
+    animation-name: fondoColores;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/* Animaciones y Transiciones */
+@keyframes bordeColor {
+    0%{
+        border: solid 8px;
+        border-color: rgb(246, 130, 138);
+    }
+    14%{
+        border: solid 8px;
+        border-color: rgb(244, 139, 175);
+    }
+    28%{
+        border: solid 8px;
+        border-color: rgb(203, 133, 244);
+    }
+    42%{
+        border: solid 8px;
+        border-color: rgb(131, 144, 241);
+    }
+    56%{
+        border: solid 8px;
+        border-color: rgb(131, 249, 176);
+    }
+    70%{
+        border: solid 8px;
+        border-color: rgb(243, 241, 135);
+    }
+    84%{
+        border: solid 8px;
+        border-color: rgb(244, 179, 118);
+    }
+    100%{
+        border: solid 8px;
+        border-color: coral;
+    }
+}
+@keyframes fondoColores {
+    0%{
+        background-color: rgb(131, 144, 241);
+    }
+    14%{
+        background-color: rgb(131, 249, 176);
+    }
+    28%{
+        background-color: rgb(243, 241, 135);
+    }
+    42%{
+        background-color: rgb(244, 179, 118);
+    }
+    56%{
+        background-color: coral;
+    }
+    70%{
+        background-color: rgb(246, 130, 138);
+    }
+    84%{
+        background-color: rgb(244, 139, 175);
+    }
+    100%{
+        background-color: rgb(203, 133, 244);
+    }
+}
+
