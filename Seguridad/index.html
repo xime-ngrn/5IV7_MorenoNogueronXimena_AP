@@ -7,27 +7,52 @@
     <title>Cesar</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/cesar.js"></script>
+    <script src="js/viggenere.js"></script>
+    <script src="js/validacion.js"></script>
 </head>
 <body>
     
-    <p>Ejemplo para poder cifrar texto con el algoritmo de césar</p>
-    <br>
-    <p>El desplazamineto no debe ser constante, para que pueda ingresar adentro de un 
-        campo de texto el usuario, para ello se deberan de aplicar la operación módulo
-        considerando la ñ
+    <div class="container">
+        <div class="cesar">
+            <h3>Cifrado César</h3>
+            <p>El cifrado cesar bla bla bla</p>
+            <br>
+            <form name="fcesar" method="post" onsubmit="cifrar()">
+                <label>Introduce el desplazamiento</label>
+                <input type="number" name="despCesar" id="desp" min="2" max="26">
+                <br>
+                <label>Introduce tu frase</label>
+                <input type="text" name="fraseCesar" id="frase">
+                <br>
+                <button type="submit" onclick="">Enviar datos</button>
+            </form>
+            <br>
+            <p name="errorc"></p>
+            <div name="resCesar" class="res">
 
-        con el desplazamineto mod 27 
-    </p>
-
-    <textarea id="cadena" name="cadenita">
-        <br>
-        <input type="button" value="cifrar" onclick="cifrar()">
-        <br>
-        <input type="button" value="descifrar" onclick="descifrar()">
-
-        <div id="resultado">
-            z
+            </div>
         </div>
-    </textarea>
+
+        <div class="vigenere">
+            <h3>Cifrado Vigenere</h3>
+            <p>El cifrado vigenere bla bla bla</p>
+            <br>
+            <form name="dvigenere" method="post" action="">
+                <label>Introduce la clave</label>
+                <input type="text" name="claveVig" id="llave" min="2" max="26">
+                <br>
+                <label>Introduce tu frase</label>
+                <input type="text" name="fraseVigenere" id="mess">
+                <br>
+                <button type="submit" onclick="">Enviar datos</button>
+            </form>
+            <br>
+            <p name="errorv"></p>
+            <div name="resVigenere" id="resVigenere" class="res">
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>

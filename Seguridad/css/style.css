@@ -1,5 +1,44 @@
 *{
-    background-color: salmon;
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to left, rgb(157, 191, 228), rgb(141, 223, 141), rgb(233, 246, 158));
+}
+
+.container{
+    width: 90%;
+    height: auto;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cesar, .vigenere {
+    width: 35%;
+    background-color: aliceblue;
+    border: solid aliceblue 5px;
+    border-radius: 8px;
+    padding-left: 20px;
+}
+
+input{
+    border-radius: 5px;
+    border-color: rgb(15, 103, 83);
+    background-color: rgb(216, 211, 211);
+}
+input:focus{
+    background-color: rgb(184, 241, 163);
+}
+button{
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgb(154, 202, 203);
+}
+button:hover{
+    transition-duration: 2s;
+    transform: scale(1.2);
 }
