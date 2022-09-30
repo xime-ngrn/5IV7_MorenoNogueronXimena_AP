@@ -43,15 +43,15 @@ var cesar = cesar || (function () {
         return replace(match);
     });
 };
- return {
-        // codificar
-        encode: function (txt, desp) {
-            return proceso(txt, desp, true);
-        },
-        decode: function (txt, desp) {
-            return proceso(txt, desp, false);
-        }
+return{
+    encode : function(txt, desp){
+        return proceso(txt, desp, true);
+    },
+
+    decode : function(txt, desp){
+        return proceso(txt, desp, false);
     }
+};
 })();
 
 function cifrar(){
@@ -59,5 +59,5 @@ function cifrar(){
 }
 
 function descifrar(){
-    document.getElementById("resCesar").innerHTML = cesar.decode(document.getElementById("fraseCesar").value,  document.getElementById("despCesar").value);
+    document.getElementById("resCesarDes").innerHTML = cesar.decode(document.getElementById("fraseCesarDes").value,  document.getElementById("despCesarDes").value);
 }

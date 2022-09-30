@@ -8,49 +8,77 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="js/cesar.js"></script>
-    <script src="js/viggenere.js"></script>
-    <script src="js/validacion.js"></script>
+    <script src="js/vigenere.js"></script>
 </head>
 <body>
-    
     <div class="container">
-        <div class="cesar">
-            <h3>Cifrado César</h3>
-            <p>El cifrado cesar bla bla bla</p>
-            <br>
-            <form name="fcesar" method="post" onsubmit="cifrar()">
-                <label>Introduce el desplazamiento</label>
-                <input type="number" name="despCesar" id="desp" min="2" max="26">
-                <br>
-                <label>Introduce tu frase</label>
-                <input type="text" name="fraseCesar" id="frase">
-                <br>
-                <button type="submit" onclick="">Enviar datos</button>
-            </form>
-            <br>
-            <p name="errorc"></p>
-            <div name="resCesar" class="res">
+        <center><h1>5IV7 Moreno Noguerón Ximena</h1></center>
+        <br><br>
+        <a href="../index.html">Regresar al Index</a>
 
+        <div class="containerCifrados">
+            <div class="cesar">
+                <h3>Cifrado César</h3>
+                <p>El cifrado César se basa en la sustitución de un texto a partir del desplazamiento de las letras del abecedario, donde cada letra es cambiada a la letra que corresponde a su posición más el desplazamiento</p>
+                <br>
+                <hr>
+                <h5>Cifrar</h5>
+                    <p>Introduce el desplazamiento</p>
+                    <input type="number" name="despCesar" id="desp" min="2" max="26">
+                    <br>
+                    <p>Introduce tu frase</p>
+                    <input type="text" name="fraseCesar" id="frase">
+                    <br>
+                    <button type="button" onclick="cifrar()">Enviar datos</button>
+                <br>
+                <p id="errorc"></p>
+                <div id="resCesar" class="res">
+                </div>
+                <br><hr>
+                <h5>Descifrar</h5>
+                    <p>Introduce el desplazamiento</p>
+                    <input type="number" name="despCesarDes" id="desp" min="2" max="26">
+                    <br>
+                    <p>Introduce tu frase</p>
+                    <input type="text" name="fraseCesarDes" id="frase">
+                    <br>
+                    <button type="button" onclick="descifrar()">Enviar datos</button>
+                <br>
+                <p id="errorc"></p>
+                <div id="resCesarDes" class="res">
+    
+                </div>
             </div>
-        </div>
+    
+            <div class="vigenere">
+                <h3>Cifrado Vigenere</h3>
+                <p>El cifrado Vigenere consiste en agregar una clave al mensaje a cifrar para crear una tabla de Vigenere, y de esta forma encontrar la letra que esté entre la letra del mensaje y la clave.</p>
+                <br>
+                    <p>Introduce la clave</p>
+                    <input type="text" name="claveVig" id="llaveV">
+                    <br>
+                    <p>Introduce tu frase</p>
+                    <input type="text" name="fraseVigenere" id="mess">
+                    <br>
+                    <button type="button" onclick="cifrarV()">Enviar datos</button>
+                <br>
+                <p name="errorv"></p>
+                <div name="resVigenere" id="resVigenere" class="res">
 
-        <div class="vigenere">
-            <h3>Cifrado Vigenere</h3>
-            <p>El cifrado vigenere bla bla bla</p>
-            <br>
-            <form name="dvigenere" method="post" action="">
-                <label>Introduce la clave</label>
-                <input type="text" name="claveVig" id="llave" min="2" max="26">
+                    <br><hr>
+                <h5>Descifrar</h5>
+                <p>Introduce la clave</p>
+                <input type="text" name="claveVig" id="llaveVD">
                 <br>
-                <label>Introduce tu frase</label>
-                <input type="text" name="fraseVigenere" id="mess">
+                <p>Introduce tu frase</p>
+                <input type="text" name="fraseVigenere" id="messD">
                 <br>
-                <button type="submit" onclick="">Enviar datos</button>
-            </form>
+                <button type="button" onclick="descifrarV()">Enviar datos</button>
             <br>
             <p name="errorv"></p>
-            <div name="resVigenere" id="resVigenere" class="res">
-
+            <div name="resVigenere" id="resVigenereD" class="res">
+    
+                </div>
             </div>
         </div>
     </div>

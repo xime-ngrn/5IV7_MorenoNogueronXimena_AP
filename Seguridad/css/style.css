@@ -5,24 +5,35 @@
 
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     background-image: linear-gradient(to left, rgb(157, 191, 228), rgb(141, 223, 141), rgb(233, 246, 158));
 }
 
+h1{
+    font-size: 28px;
+}
+
 .container{
+    width: auto;
+    margin-left: 180px;
+}
+.containerCifrados{
     width: 90%;
     height: auto;
-    margin-top: 10%;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
 }
 
 .cesar, .vigenere {
-    width: 35%;
+    width: 650px;
     background-color: aliceblue;
     border: solid aliceblue 5px;
     border-radius: 8px;
     padding-left: 20px;
+}
+.cesar{
+    margin-right: 80px;
 }
 
 input{
@@ -39,6 +50,6 @@ button{
     background-color: rgb(154, 202, 203);
 }
 button:hover{
-    transition-duration: 2s;
+    transition-duration: 1s;
     transform: scale(1.2);
 }
